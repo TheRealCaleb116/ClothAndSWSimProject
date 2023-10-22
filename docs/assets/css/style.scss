@@ -12,7 +12,7 @@
         font-size: 1.1rem;
     }
 
-    img {
+    #HeaderPics img {
         float: right;
         padding-left: 25px;
         margin-bottom: 2px;
@@ -21,8 +21,17 @@
 }
 
 
-img {
+#HeaderPics img {
     max-height: 300px;
+}
+
+img {
+    max-width: 300px;
+}
+
+#gif{
+    max-width: 800px;
+    width: 100%;
 }
 
 .btn-dark {
