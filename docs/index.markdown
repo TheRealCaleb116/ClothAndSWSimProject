@@ -46,4 +46,7 @@ Below is the writeup for my Cloth simulation project which also includes a seper
 
 ## Difficulties Encountered
 Building these simulations were a first for me. I have made games before, but implementing my own simulation code is a challenge I have never tackled before. One of the main challenges I had while implementing my simulations, specificly the cloth simulation, was just the finickyness of tuning all the physics simulation. What time step should I use? What k values? More nodes or less? If I changed one value everything else needed to be changed. Beyond this I was having a strange issue where my cloth would never come to a complete rest. There was enough inacuracy in the calculations that the cloth would always have a little energy. After hours double checking code, trying different high order integrations schemes, I couldn't get anything to work. Finally after some inspiration from a cloth simulation reference project I saw online, I added a janky dampening to the velcoity of each node that is relative to the nodes total velocity. Is it 'technically' accurate, probably not. It might be hacky, but its fast, looks good, and ended up being one line of code. Just another reminder that at the end of the day its all about how the simulation looks. People watch your simulation, not your code.
- 
+
+## Art Contest
+![Image Here](/assets/img/ArtEntryCalebWiebolt.gif)
+
