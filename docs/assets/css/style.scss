@@ -1,0 +1,35 @@
+--- 
+--- 
+
+@import "{{ site.theme }}";
+
+
+@media screen and (min-width: 64em) {
+    .main-content {
+        max-width: 78rem;
+        padding: 2rem 6rem;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+    img {
+        float: right;
+        padding-left: 25px;
+    }
+}
+
+
+img {
+    max-height: 350px;
+}
+
+.btn-dark {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(201, 201, 201, 0.377);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+.btn-dark:hover {
+    color: rgba(50, 50, 50, 0.7);
+    background-color: rgba(133, 133, 133, 0.562);
+    border-color: rgba(55, 55, 55, 0.2);
+}
