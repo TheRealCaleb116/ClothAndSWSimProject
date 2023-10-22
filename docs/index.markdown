@@ -24,11 +24,11 @@ Below is the writeup for my Cloth simulation project which also includes a seper
 
 | Feature                           | Description       | TimeCode |
 |:-------------                     |:------------------|:------|
-| Cloth Simulation          | A natural looking cloth sim that collides with an object. | X:XX-X:XX  |
-| 3D Simulation        | The Cloth sim is in 3D and has a natural camera. | X:XX-X:XX   |
-| High-Quality Render  | I used texturing, lighting, particle systems, and a camera controller to make a compelling render | X:XX-X:XX  |
-| Air Drag on Cloth | The cloth is effected by air drag and an included wind system. | X:XX-X:XX  |
-| Continuum Fluid Simulation   | I implemented a Shallow Water Simulation and integrated it into a scene. | X:XX-X:XX   |
+| Cloth Simulation          | A natural looking cloth sim that collides with an object. | 0:03-4:34  |
+| 3D Simulation        | The Cloth sim is in 3D and has a natural camera. | 0:03-4:34   |
+| High-Quality Render  | I used texturing, lighting, particle systems, and a camera controller to make a compelling render | Throughout the video. (The wind particles turned out nice) |
+| Air Drag on Cloth | The cloth is effected by air drag and an included wind system. | 1:38-3:35  |
+| Continuum Fluid Simulation   | I implemented a Shallow Water Simulation and integrated it into a scene. | 4:35-7:34   |
 
 
 
