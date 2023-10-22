@@ -2,7 +2,8 @@
 layout: default
 ---
 
-![Image Here](/assets/img/PinballGame.png)
+![Image Here](/assets/img/ClothSimPic.png)
+![Image Here](/assets/img/ShallowWaterSimPic.png)
 
 # Cloth and Shallow Water Simulation - Caleb Wiebolt
 
@@ -36,7 +37,7 @@ Below is the writeup for my Cloth simulation project which also includes a seper
 
 
 ## Assets Used
-*   2D Pixel Art Platformer | Biome - American Forest art assets by <a href="https://assetstore.unity.com/packages/2d/environments/2d-pixel-art-platformer-biome-american-forest-255694"> OOO Superposition Principle Inc.</a> on the Unity Asset Store
+*   2D Pixel Art Platformer \| Biome - American Forest art assets by <a href="https://assetstore.unity.com/packages/2d/environments/2d-pixel-art-platformer-biome-american-forest-255694"> OOO Superposition Principle Inc.</a> on the Unity Asset Store
 * Beachball Textures by <a href="https://www.robinwood.com/Catalog/FreeStuff/Textures/TexturePages/BallMaps.html">Robin Wood</a>
 * Skybox Texture by <a href="https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633"> Unamed666</a> on the Unity Asset Store 
 * Wood Decking Texture provided by <a href="https://architextures.org/textures/487"> architextures.org</a>
