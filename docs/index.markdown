@@ -6,7 +6,7 @@ layout: default
 
 # Cloth and Shallow Water Simulation - Caleb Wiebolt
 
-Below is the writeup for my pinball game. It was created in Unity for my Animation and Planning in Games class. All the graded features that I attempted can be found below. To look at the source code or a pre built executable click the button below. 
+Below is the writeup for my Cloth simulation project which also includes a seperate Shallow Water Simulation as well. It was created in Unity for my Animation and Planning in Games class. All the graded features that I attempted can be found below. To look at the source code or a pre built executable click the button below. 
 
 <a href="{{ site.github.repository_url }}" class="btn btn-dark">Go to the Code</a>
 
@@ -23,16 +23,12 @@ Below is the writeup for my pinball game. It was created in Unity for my Animati
 
 | Feature                           | Description       | TimeCode |
 |:-------------                     |:------------------|:------|
-| Basic Pinball Dynamics            | Simple, physically accurate simulation of the ball as it moves and bounces | The whole video  |
-| Multiple Balls Interacting        | Multiple balls on screen at the same time interacting with each other | 1:37-2:04   |
-| Circular Obstacles                | I implemented circular objects for the balls to bounce off of. | 0:43-0:51  |
-| Line Segment Obstacles            | The use of line segments/polygons, used on the upper boarder and the border by the flippers. | 0:53-0:59  |
-| Plunger/Launcher to shoot balls   | I implemented a plunger that is controlled by the space bar to launch balls into the scene | 0:02-0:10  |
-| Textured Background               | I textured the background of the pinball table with a wood texture | The whole video  |
-| Textured Obstacles                | I textured various obstacles, especially the circular bumpers with textures depending on their point value. | The whole video  |
-| Reactive Obstacles                | When a pinball hits one of the point giving bumpers the bumper will flash. | 1:12-1:17  |
-| Score Display                     | The current score is displayed graphically on screen and updates as scoring bumpers are hit | The whole video  |
-| Pinball Game                      | Both flippers work independently with the left and right mouse buttons and balls collide off of the flippers naturally. To start the game you press the start button. Your goal is to hit as many of the scoring bumpers as possible. You have a limited number of balls you can launch onto the screen and once they are gone it is game over. | 0:55-1:36  |
+| Cloth Simulation          | A natural looking cloth sim that collides with an object. | X:XX-X:XX  |
+| 3D Simulation        | The Cloth sim is in 3D and has a natural camera. | X:XX-X:XX   |
+| High-Quality Render  | I used texturing, lighting, particle systems, and a camera controller to make a compelling render | X:XX-X:XX  |
+| Air Drag on Cloth | The cloth is effected by air drag and an included wind system. | X:XX-X:XX  |
+| Continuum Fluid Simulation   | I implemented a Shallow Water Simulation and integrated it into a scene. | X:XX-X:XX   |
+
 
 
 ## Tools and Libaries Used
@@ -40,9 +36,13 @@ Below is the writeup for my pinball game. It was created in Unity for my Animati
 
 
 ## Assets Used
-*   Pinball art assets by <a href="https://www.freepik.com/free-vector/pinball-machine-parts-realistic-collection_13804973.htm"> macrovector</a> on Freepik
-*   Wood background texture by <a href="https://www.freepik.com/free-photo/damaged-parquet-texture_969026.htm">fwstudio</a> on Freepik
+*   2D Pixel Art Platformer | Biome - American Forest art assets by <a href="https://assetstore.unity.com/packages/2d/environments/2d-pixel-art-platformer-biome-american-forest-255694"> OOO Superposition Principle Inc.</a> on the Unity Asset Store
+* Beachball Textures by <a href="https://www.robinwood.com/Catalog/FreeStuff/Textures/TexturePages/BallMaps.html">Robin Wood</a>
+* Skybox Texture by <a href="https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633"> Unamed666</a> on the Unity Asset Store 
+* Wood Decking Texture provided by <a href="https://architextures.org/textures/487"> architextures.org</a>
+* Cloth Texture provided by <a href="https://freepbr.com/materials/diagonal-stripe-weave-pbr/"> freepbr.com</a>
+
 
 ## Difficulties Encountered
-Building this game was a fun challenge. No matter how many times I seem to write collision code it is always a finicky and messy thing to get working cleanly. One of the main challenges I ran into while coding this project was my tendency to indulge in scope creep. This was especially true when it came to things like OOP design practices. For the collision system especially, I started with a very generalized, nicely designed OOP version that just didn't work. It could have worked but I realized as I was writing it how much time I was spending writing code that I would never need for this project. Code that, while well designed, was just making it harder for me to troubleshoot what was happening in this small game. I ended up with a more tailored approach to design for this game. Is it wonderfully designed with long-term scalability in mind, no. Does it fit this application well without being unwieldy or restrictive, yes. My main takeaway is to start by solving the problem in front of you and make it work before you make it perfect.
-
+Building these simulations were a first for me. I have made games before, but implementing my own simulation code is a challenge I have never tackled before. One of the main challenges I had while implementing my simulations, specificly the cloth simulation, was just the finickyness of tuning all the physics simulation. What time step should I use? What k values? More nodes or less? If I changed one value everything else needed to be changed. Beyond this I was having a strange issue where my cloth would never come to a complete rest. There was enough inacuracy in the calculations that the cloth would always have a little energy. After hours double checking code, trying different high order integrations schemes, I couldn't get anything to work. Finally after some inspiration from a cloth simulation reference project I saw online, I added a janky dampening to the velcoity of each node that is relative to the nodes total velocity. Is it 'technically' accurate, probably not. It might be hacky, but its fast, looks good, and ended up being one line of code. Just another reminder that at the end of the day its all about how the simulation looks. People watch your simulation, not your code.
+ 
